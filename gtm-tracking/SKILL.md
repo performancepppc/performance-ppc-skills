@@ -91,9 +91,17 @@ Dopo aver ricevuto le risposte del Blocco A, fai queste domande aggiuntive **sol
 
 ---
 
-## PASSO 3 — DIAGNOSI E SOLUZIONE
+## PASSO 3 — DIAGNOSI E SOLUZIONE AUTONOMA
 
-Solo dopo aver ricevuto le risposte ai blocchi A e B, procedi con la diagnosi. Usa i percorsi qui sotto come riferimento.
+Solo dopo aver ricevuto le risposte ai blocchi A e B, procedi così:
+
+1. **Prova a diagnosticare il problema** in base alle informazioni raccolte e alla tua conoscenza dei container GTM di Performance PPC.
+2. **Dai istruzioni chiare e operative** per risolvere in autonomia, step by step, senza dare nulla per scontato.
+3. **Se il problema richiede accesso diretto a GTM** (modificare tag, trigger, variabili) e il collega non sa farlo, genera il report del Passo 4 così Davide può intervenire subito con tutte le info già in mano.
+
+Il criterio è: se il collega può farcela da solo con le tue istruzioni, guidalo. Se serve Davide, non perdere tempo — schematizza subito il problema con il report.
+
+Usa i percorsi qui sotto come riferimento per la diagnosi.
 
 ---
 
