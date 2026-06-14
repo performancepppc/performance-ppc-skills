@@ -34,22 +34,66 @@ Il tuo primo messaggio di risposta deve contenere SOLO le domande del Blocco A q
 
 ## PASSO 1 — DOMANDE OBBLIGATORIE (Blocco A)
 
-Copia e adatta questo messaggio come prima risposta, in tono colloquiale:
+Usa lo strumento **AskUserQuestion** per fare il sondaggio in modo interattivo con pop-up a scelta multipla. Fai due round di domande: prima le domande a scelta multipla, poi chiedi in un messaggio testuale le due informazioni che richiedono testo libero.
+
+**Round 1 — AskUserQuestion con queste domande:**
+
+```
+Domanda 1:
+  header: "Tipo di problema"
+  question: "Qual è il problema che stai riscontrando?"
+  multiSelect: false
+  options:
+    - "Non arriva nessun dato (conversioni/lead a 0)"
+    - "Arrivano dati duplicati (troppi lead o acquisti)"
+    - "I dati arrivano ma con valore sbagliato (es. valore = 0)"
+    - "Il tracking funzionava, ora si è rotto"
+    - "Setup nuovo — devo configurare il tracking da zero"
+    - "Il banner cookie non compare"
+
+Domanda 2:
+  header: "Piattaforme"
+  question: "Su quali piattaforme hai il problema?"
+  multiSelect: true
+  options:
+    - "Google Ads"
+    - "Meta (Facebook/Instagram)"
+    - "GA4"
+    - "TikTok"
+    - "Tutte"
+
+Domanda 3:
+  header: "Azione tracciata"
+  question: "Cosa dovrebbe essere tracciato come conversione?"
+  multiSelect: false
+  options:
+    - "Acquisto / ordine completato"
+    - "Compilazione di un form (es. contatti, preventivo)"
+    - "Arrivo su una pagina di ringraziamento"
+    - "Click su telefono / email / WhatsApp"
+    - "Completamento di un quiz o funnel"
+    - "Altro"
+
+Domanda 4:
+  header: "Trigger attuale"
+  question: "Sai come è impostato il trigger in GTM in questo momento?"
+  multiSelect: false
+  options:
+    - "Si attiva quando l'utente arriva su una pagina specifica (pageview)"
+    - "Si attiva quando l'utente clicca qualcosa"
+    - "Si attiva quando il form viene inviato"
+    - "Non lo so"
+```
+
+**Round 2 — Messaggio testuale** (dopo aver ricevuto le risposte al Round 1):
+
+Chiedi in un unico messaggio:
+1. Qual è l'URL della pagina su cui c'è il problema?
+2. Qual è l'URL della pagina che dovrebbe contare come conversione (pagina grazie, risultato, conferma ordine)?
 
 ---
 
-Ciao! Per aiutarti bene ho bisogno di capire la situazione nel dettaglio. Rispondimi a queste domande:
-
-1. **Qual è l'URL della landing page** su cui stai lavorando?
-2. **Qual è l'URL della pagina di conversione?** (la pagina "grazie", il risultato del quiz, la conferma ordine — quella che dovrebbe segnalare la conversione)
-3. **Cosa deve fare l'utente per essere contato come conversione?** (es. completare il quiz, inviare un form, fare un acquisto, arrivare su una pagina...)
-4. **Su quali piattaforme hai il problema?** (Google Ads, Meta/Facebook, GA4, TikTok, tutte?)
-5. **Come è impostato attualmente il trigger in GTM** — sai se scatta quando l'utente arriva su una pagina, quando clicca qualcosa, o quando succede qualcos'altro? (se non lo sai, di' pure "non so")
-6. **Il tracking ha mai funzionato**, o non ha mai funzionato dall'inizio?
-
----
-
-Aspetta le risposte a tutte e 6 le domande prima di procedere con qualsiasi analisi o suggerimento.
+Aspetta le risposte a entrambi i round prima di procedere con qualsiasi analisi o suggerimento.
 
 ---
 
